@@ -23,7 +23,7 @@ From the trained model we can generate predictions of arbitrary length to follow
 
 ## Output filters
 
-The neural net has a thing for double letters, for some reason, and thus I filter the output to exclude names with double letters.  I also filter the output to exclude existing drug names from the input data as well as duplicate generated names.  Finally, I implement a filter that excludes candidates whose consonant-to-vowel ratio is not strictly between 0.5 and 2.  This filters out many of the phonologically impossible candidates.
+The neural net has a real thing for double letters, and thus I filter the output to exclude names with double letters.  I also filter the output to exclude existing drug names from the input data as well as duplicate generated names.  Finally, I implement a filter that excludes candidates whose consonant-to-vowel ratio is not strictly between 0.5 and 2.  This filters out many of the phonologically impossible candidates.
 
 ## Sample output
 
